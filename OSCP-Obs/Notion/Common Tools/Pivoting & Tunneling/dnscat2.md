@@ -1,0 +1,1 @@
+https://oscp.adot8.com/post-exploitation/dns-tunneling
