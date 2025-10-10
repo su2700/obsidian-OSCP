@@ -1,5 +1,37 @@
-thecybergeek::CRAFT2:5371700931b77050:77E00463712E5DAF3F2EAA08EE62AADB:0101000000000000000FD66BD1FFDB01EA9A4BA1CD5755CE0000000002000800470036004500460001001E00570049004E002D00360046005A0051004B0059004800310046003900410004003400570049004E002D00360046005A0051004B005900480031004600390041002E0047003600450046002E004C004F00430041004C000300140047003600450046002E004C004F00430041004C000500140047003600450046002E004C004F00430041004C0007000800000FD66BD1FFDB010600040002000000080030003000000000000000000000000030000000EC7CA1882CB50297357209482D722C2F3D41A566D0CC3BD5A56B55A058CBB00A001000000000000000000000000000000000000900260063006900660073002F003100390032002E003100360038002E00340035002E003100380031000000000000000000
+ps1 ans ps2 are module, need impordt first
 
+```
+PS: C:\xampp\htdocs\tmp> Import-Module .\PrivescCheck.ps1
+
+PS: C:\xampp\htdocs\tmp> Invoke-PrivescCheck -Extended
+```
+
+ for MySQL if SSL is required
+ 
+ pivoting git:(main) ✗  mysql -u root -h 127.0.0.1
+ERROR 2026 (HY000): TLS/SSL error: SSL is required, but the server does not support it
+➜  pivoting git:(main) ✗ mysql -u root -h 127.0.0.1 --ssl-mode=DISABLED
+
+mysql: unknown variable 'ssl-mode=DISABLED'
+➜  pivoting git:(main) ✗ mysql -u root -h 127.0.0.1 --ssl-mode=PREFERRED
+
+mysql: unknown variable 'ssl-mode=PREFERRED'
+➜  pivoting git:(main) ✗ mysql -u root -h 127.0.0.1 --skip-ssl
+[[RunasCs]]
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+
+
+is used to display detailed information about **active network connections** and **listening ports** on your system.
+
+since we find a db, so we check if a db is running, mysql 3306
+
+[[netstat]]
+
+```
+netstat -ano
+
+```
   
 [[evil-winrm]]
 

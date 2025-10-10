@@ -1,0 +1,5 @@
+
+```
+powershell -ep bypass
+
+```

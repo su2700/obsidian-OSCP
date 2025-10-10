@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c7907eddafa1ce52",
+        "id": "a9c8bb5ca74f346a",
         "type": "tabs",
         "children": [
           {
-            "id": "1354e414025b765a",
+            "id": "d215c5fee17b9809",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Notion/Common Tools/RunasCs.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "RunasCs"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "goshs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 318.5
   },
   "right": {
     "id": "84c6e20ab22091e1",
@@ -166,37 +170,39 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "928063f8d14daaa0",
+  "active": "d215c5fee17b9809",
   "lastOpenFiles": [
-    "Notion/Common Tools/webpage-2025-10-08T09-15-16-250Z.md",
-    "Notion/Offsec/Practice/Hetemit.md",
-    "Notion/Common Tools/skill/Windows PATH.md",
-    "Notion/Offsec/Practice/Jacko.md",
-    "Notion/Common Tools/skill/PE/Windows/PrintSpoofer64.md",
-    "Notion/Common Tools/skill/PE/Windows/GodPotato.md",
-    "Notion/Common Tools/skill/PE/Windows/SeImpersonatePrivilege.md",
-    "Notion/Common Tools/skill/PE/Windows/Windows Privilege Escalation Exploit.md",
-    "Notion/Offsec/Tool/shell alive.md",
-    "Notion/Common Tools/skill/PE/Windows",
-    "Notion/Offsec/Tool/Tool.md",
-    "Notion/Common Tools/skill/reverse shell.md",
-    "Notion/Common Tools/skill/better shell.md",
-    "Notion/Common Tools/skill/add hosts.md",
+    "Notion/Common Tools/skill/rlwrap nc -lnvp.md",
+    "Notion/Common Tools/skill/powershell.md",
+    "Notion/Offsec/Craft2.md",
+    "Notion/Common Tools/RunasCs.md",
+    "Notion/Common Tools/skill/netstat.md",
+    "Notion/Common Tools/ODT/macro-generator.md",
+    "Notion/Common Tools/NTLM/responder.md",
+    "Notion/Common Tools/NTLM/Inveigh.md",
+    "Notion/Common Tools/NTLM/ntlmrelayx.py.md",
+    "Notion/Common Tools/impacket/ntlmrelayx.py.md",
+    "Notion/Common Tools/ODT/Bad-ODF.md",
+    "Notion/Common Tools/NTLM",
+    "Notion/Common Tools/ODT/LiberOffice.md",
+    "Notion/Service and Protocols/http/updog.md",
+    "Notion/Common Tools/ODT",
+    "Notion/Service and Protocols/http/goshs.md",
     "Notion/Common Tools/skill/Windows-File-Transfers-For-Hackers.md",
+    "Notion/Common Tools/skill/Windows PATH.md",
+    "Notion/Common Tools/skill/reverse shell.md",
     "Notion/Common Tools/skill/py library.md",
-    "Notion/Common Tools/skill/pipx.md",
-    "Notion/Common Tools/skill/find.md",
     "Notion/Common Tools/skill/GLIBC_2.34  not found.md",
-    "Notion/Common Tools/skill/docker.md",
-    "Notion/Ports/5437.md",
-    "Notion/Offsec/Internal.md",
-    "Notion/Offsec/Offsec.md",
-    "Notion/Offsec/play/loly.md",
-    "Notion/Offsec/Practice/Payday.md",
-    "Notion/Common Tools/skill/PE/LINUX/pe.md",
+    "Notion/Common Tools/skill/create virtualenv.md",
+    "Notion/Common Tools/WerTrigger.md",
+    "Notion/Common Tools/Pivoting & Tunneling/chisel.md",
+    "Notion/Offsec/craft.md",
+    "Notion/Offsec/Access.md",
+    "Notion/Common Tools/webpage-2025-10-08T09-15-16-250Z.md",
+    "Notion/Offsec/Hetemit.md",
+    "Notion/Common Tools/skill/PE/Windows",
     "Notion/Common Tools/skill/PE/LINUX",
     "Notion/Common Tools/skill/PE",
-    "Notion/Offsec/Access.md",
     "Notion/Offsec/Practice",
     "Pasted image 20250925115707.png",
     "Pasted image 20250925113547.png",
@@ -206,10 +212,8 @@
     "Notion/Common Tools/PortScan",
     "Notion/Common Tools/Untitled.base",
     "Notion/Common Tools/shell",
-    "Notion/Common Tools/cat",
     "Untitled.png",
     "Untitled 1.canvas",
-    "Notion/Common Tools/kerberos/Rubeus",
     "Pasted image 20250920145203.png",
     "Untitled 9.canvas",
     "20200421101716736.png",
