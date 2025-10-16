@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notion/Offsec/Twiggy.md",
+                "file": "Notion/Offsec/BillyBoss.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Twiggy"
+              "title": "BillyBoss"
             }
           }
         ]
@@ -172,12 +172,18 @@
   },
   "active": "47c47754e31eec81",
   "lastOpenFiles": [
-    "Notion/Offsec/socrere.md",
+    "Notion/Common Tools/skill/Windows-File-Transfers-For-Hackers.md",
+    "Notion/Offsec/BillyBoss.md",
+    "Notion/Common Tools/skill/Windows PATH.md",
+    "Notion/Common Tools/skill/rlwrap nc -lnvp.md",
+    "Notion/Common Tools/skill/reverse shell.md",
+    "Notion/Common Tools/skill/PE/LINUX/pe.md",
+    "Notion/Offsec/Exfiltrated.md",
     "Notion/Offsec/Twiggy.md",
+    "Notion/Offsec/socrere.md",
     "Notion/Common Tools/skill/dic brute.md",
     "Notion/Offsec/Craft2.md",
     "Untitled 10.canvas",
-    "Notion/Common Tools/skill/rlwrap nc -lnvp.md",
     "Notion/Common Tools/RunasCs.md",
     "Notion/Common Tools/skill/powershell.md",
     "Notion/Common Tools/skill/netstat.md",
@@ -192,15 +198,9 @@
     "Notion/Service and Protocols/http/updog.md",
     "Notion/Common Tools/ODT",
     "Notion/Service and Protocols/http/goshs.md",
-    "Notion/Common Tools/skill/Windows-File-Transfers-For-Hackers.md",
-    "Notion/Common Tools/skill/Windows PATH.md",
-    "Notion/Common Tools/skill/reverse shell.md",
     "Notion/Common Tools/skill/py library.md",
     "Notion/Common Tools/skill/GLIBC_2.34  not found.md",
     "Notion/Common Tools/skill/create virtualenv.md",
-    "Notion/Common Tools/WerTrigger.md",
-    "Notion/Common Tools/Pivoting & Tunneling/chisel.md",
-    "Notion/Offsec/craft.md",
     "Notion/Common Tools/skill/PE/Windows",
     "Notion/Common Tools/skill/PE/LINUX",
     "Notion/Common Tools/skill/PE",

