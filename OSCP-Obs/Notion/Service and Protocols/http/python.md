@@ -1,4 +1,6 @@
-
+```
+python3 -m http.server 80
+```
 
 
 > 使用 Python，您可以从任何目录启动 HTTP 服务器；但是，Apache 有一个 webroot 目录，默认情况下通常为**/var/www/html**。

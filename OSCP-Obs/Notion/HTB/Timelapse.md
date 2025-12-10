@@ -157,7 +157,7 @@ Get-ADComputer username
 Get-ADComputer dc01 -property * // * means get everything
 ```
 
-mount [[SMB]]
+mount [[Notion/Service and Protocols/SMB]]
 
 for mac
 
@@ -205,7 +205,7 @@ mkdir share && mount_smbfs //guest:@10.10.11.152/Shares ./share
 
 for linux
 
-```PowerShell
+```
 mkdir share && sudo mount -t cifs //10.10.11.152/Shares ./share
 ```
 

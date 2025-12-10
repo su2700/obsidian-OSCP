@@ -10,3 +10,20 @@
     
     - 服务器视为目录请求，返回该目录下的默认页面（如 index.html、index.php）。
     - 通常是正确访问 Web 应用的方式。
+
+
+
+80/tcp open  http    syn-ack ttl 61 Apache httpd 2.4.41 ((Ubuntu))
+| http-malware-host: 
+|   Host appears to be infected (/ts/in.cgi?open2 redirects to http://exfiltrated.offsec/ts/in.cgi?open2)
+|_  See: http://blog.unmaskparasites.com/2009/09/11/dynamic-dns-and-botnet-of-zombie-web-servers/
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+| http-robots.txt: 7 disallowed entries 
+| /backup/ /cron/? /front/ /install/ /panel/ /tmp/ 
+|_/updates/
+
+
+check those fold from nmap 
+

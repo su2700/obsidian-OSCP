@@ -1,0 +1,1 @@
+A Windows reverse shell payload generator and handler that abuses the http(s) protocol to establish a beacon-like reverse shell.

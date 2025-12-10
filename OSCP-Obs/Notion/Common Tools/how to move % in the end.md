@@ -1,0 +1,2 @@
+echo >> hash
+cat hash

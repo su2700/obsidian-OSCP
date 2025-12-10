@@ -49,7 +49,7 @@ set PATH=%PATH%;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windo
 ```
 
 
-find [[SeImpersonatePrivilege]]```
+find [[Notion/Common Tools/skill/PE/Windows/SeImpersonatePrivilege/SeImpersonatePrivilege]]```
 SeImpersonatePrivilege, 
 [[PrintSpoofer64]]
 [[GodPotato]]
