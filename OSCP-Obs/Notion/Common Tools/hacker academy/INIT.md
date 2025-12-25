@@ -188,3 +188,91 @@ katana -u http://127.0.0.1:80 -jc --depth 4 -silent
     
 
 **总结：** 这张图片是一个**渗透测试自动化备忘单**。攻击者首先设置 $target IP，然后复制粘贴上面的命令，先扫描端口，再扫描漏洞，最后对 Web 服务进行暴力的目录枚举，以获取尽可能多的信息。
+
+Here is the text extracted from the provided images, organized by their respective sections:
+
+### **Image 1: Checklist**
+
+**Active Directory:**
+
+- [x] Scan all TCP ports.
+    
+- [ ] Check ldap, rpc, smb with anonymous access. Check for public share.
+    
+- [ ] Find usernames: If you get access, look for usernames with stuff like netexec --rid-brute, --users, and enumdomuser with rpcclient to get list of users in domain without needed initial credentials. Check usernames with kerbrute.
+    
+- [ ] Test for asreproasting after you have collected usernames. If successful, try cracking.
+    
+- [ ] Check for kerberoasting after you have a username and password.
+    
+- [ ] Try authenticating with every possible protocol with those set of credentials. winrm, rdp, mssql, smb, rpc, ldap etc.
+    
+- [ ] Enumerate shares for every user you get access to. Every new user means you should recheck their shares.
+    
+- [ ] If you get shell as a user, check for privesc, and dump all hashes and collect them in a file for possible bruteforcing and lateral movement.
+    
+- [ ] Run bloodhound and check for basic attacks like DCSync. Also checks for other paths bloodhound may find.
+    
+- [ ] Check for Certificate based attacks with certipy.
+    
+- [ ] If it's an AD network, check for additional network adapters in case of pivoting being needed. If so, set up a pivot and relay all tools over that "jumpbox" so you can target the other machines in the other network.
+    
+- [ ] Remember to bruteforce different protocols with credentials you have. Remember to use NTLM authentication too.
+    
+- [ ] Check UDP ports.
+    
+- [ ] Rescan if you're stuck, verify tools are working properly and you're running them properly.
+    
+
+**Windows Privesc:**
+
+- [ ] Run whoami /all, then PowerUp, then WinPEAS.
+    
+- [ ] This will give you all info tbh. Save output and slowly go over it.
+    
+- [ ] If you get completely stuck, you can manually check for things too. If that doesn't help you likely need to relearn the privesc attacks.
+    
+
+---
+
+### **Image 2: Network Scanning & Web Discovery**
+
+**Network Scanning:**
+
+- `nmap -p- -Pn $target -v --min-rate 1000 --max-rtt-timeout 1000ms --max-retries 5 -oN nmap_ports.txt && sleep 5 && nmap -Pn $target -sV -sC -v -oN nmap_sVsC.txt && sleep 5 && nmap -T5 -Pn $target -v --script vuln -oN nmap_vuln.txt`
+    
+- `rustscan --ulimit 5000 -a $target -- -sC -sV -Pn -oN nmap_full`
+    
+
+**Web Content Discovery:**
+
+**Directories:**
+
+- `gobuster dir -u http://$target -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories.txt -t 50 -o gb_dirs.txt`
+    
+- `gobuster dir -u http://$target -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50 -o gb_dirs2.txt`
+    
+
+**Files:**
+
+- `gobuster dir -u http://$target -w /usr/share/seclists/Discovery/Web-Content/common.txt -t 50 -x php,asp,xml,html,js,sql,gz,zip -r -o gb_files.txt`
+    
+- `gobuster dir -u http://$target -w /usr/share/seclists/Discovery/Web-Content/raft-large-files.txt -t 50 -x php,asp,xml,html,js,sql,gz,zip -r -o gb_files2.txt`
+    
+
+**Wordlists:**
+
+- `/usr/share/seclists/Discovery/Web-Content/common.txt`
+    
+- `/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
+    
+- `/usr/share/seclists/Discovery/Web-Content/raft-large-directories-lowercase.txt`
+    
+- `/usr/share/seclists/Discovery/Web-Content/big.txt`
+    
+- `/usr/share/seclists/Discovery/Web-Content/raft-large-files.txt`
+    
+- `/usr/share/seclists/Discovery/Web-Content/raft-large-words.txt`
+    
+
+Would you like me to help you format these commands into a reusable script?

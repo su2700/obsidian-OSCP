@@ -1,0 +1,3 @@
+
+When you click on home, the same site page opens, but there are changes in the URL address. You may notice that the home.html file is passed as the file parameter. (http://192.168.123.112/index.php?file=home.html) This may indicate an LFI vulnerability
+Using basic payload for LFI with line traversal (../../../../../../../../../../../../) failed to gain access to files. But using a method to bypass non-recursive removal of ../ characters, I was able to access the /etc/passwd file, thereby confirming the presence of the vulnerability

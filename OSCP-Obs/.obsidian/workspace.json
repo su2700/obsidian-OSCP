@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9835508ee4bb957f",
+        "id": "177819889ab1fe63",
         "type": "tabs",
         "children": [
           {
-            "id": "2b3fc618650deb62",
+            "id": "e5e9fd5f0da5202f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notion/Common Tools/two kinds domain name.md",
+                "file": "DRSUAPI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "two kinds domain name"
+              "title": "DRSUAPI"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "SeShutdownPrivilege",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,38 +170,38 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "2b3fc618650deb62",
+  "active": "e5e9fd5f0da5202f",
   "lastOpenFiles": [
-    "Notion/Common Tools/kerberos/kerbrute.md",
-    "Notion/Common Tools/two kinds domain name.md",
-    "Notion/Common Tools/hacker academy/Untitled.md",
-    "Notion/Common Tools/hacker academy",
-    "Notion/Common Tools/Untitled 3.md",
-    "Notion/Common Tools/docker.md",
-    "Notion/Common Tools/SMB/smbclient.md",
-    "Notion/Common Tools/haiti.md",
-    "Notion/Common Tools/username-anarchy.md",
-    "Notion/Common Tools/ldap/ldapsearch.md",
-    "Notion/Common Tools/winPriv/SeBackupPrivilege.md",
-    "Notion/Common Tools/NTLM/NTLM.md",
-    "Notion/Common Tools/NTLM/responder.md",
-    "Notion/Common Tools/NTLM/smb.md",
-    "Notion/Common Tools/NTLM/Inveigh.md",
-    "Notion/Common Tools/crypto/hashcat.md",
-    "Notion/THM/Fusion Corp/NMAP.md",
-    "Notion/Common Tools/Mishka’s Mangler.md",
-    "Notion/Common Tools/nxc/nxc/smb.md",
-    "Notion/Common Tools/nxc/nxc/nxc.md",
-    "Notion/Common Tools/rpc and wmi.md",
-    "Notion/Service and Protocols/RPC.md",
-    "Notion/Common Tools/winPriv/BackupOperatorToolkit.exe.md",
-    "Notion/Common Tools/how to move % in the end.md",
-    "Notion/THM/Fusion Corp",
-    "Notion/Common Tools/hydra.md",
-    "Notion/THM",
-    "Notion/Common Tools/nmap.md",
-    "Pasted image 20251128165658.png",
+    "Notion/Common Tools/hacker academy/INIT.md",
+    "DRSUAPI.md",
+    "Notion/Common Tools/hacker academy/AD CHECKLIST.md",
     "Notion/Common Tools/katz/mimikatz.md",
+    "ms14-068.py.md",
+    "Notion/Common Tools/impacket/lookupsid.py.md",
+    "What is the syntax to execute the command Get-Service on a remote computer named \"RoyalFortune\"?.md",
+    "Notion/Common Tools/skill/how to open winrm.md",
+    "Notion/Common Tools/AS-REP Roasting.md",
+    "Notion/Common Tools/tree.md",
+    "taskkill.md",
+    "tasklist.md",
+    "Notion/Common Tools/dir.md",
+    "Notion/Common Tools/how to find port running.md",
+    "Server Operator Group Server Operators.md",
+    "Notion/Common Tools/powerSploit/powerview.md",
+    "Notion/Common Tools/pwsh create username  Username Anarchy.md",
+    "Notion/Common Tools/evil-winrm and ldap.md",
+    "Notion/Common Tools/cmd change set password.md",
+    "Notion/Common Tools/PATH Hijacking.md",
+    "Notion/Common Tools/LFI.md",
+    "Notion/Common Tools/run script in memory windows.md",
+    "Notion/Common Tools/running scripts is disabled on this system windows.md",
+    "Notion/Common Tools/rusthound.md",
+    "Notion/Common Tools/Sharphound.ps1.md",
+    "Notion/Common Tools/snmp.md",
+    "Notion/Common Tools/hacker academy",
+    "Notion/THM/Fusion Corp",
+    "Notion/THM",
+    "Pasted image 20251128165658.png",
     "Notion/Common Tools/Untitled.base",
     "Notion/Common Tools/Untitled.canvas",
     "Notion/Common Tools/winPriv",
