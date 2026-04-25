@@ -1,0 +1,16 @@
+Impacket v0.14.0.dev0+20251204.163933.2347bd3f - Copyright Fortra, LLC and its affiliated companies 
+
+[-] User Administrator doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User Guest doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+[-] User atlbitbucket doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User bitbucket doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User nik doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User replication doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User spooks doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User korone doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User banana doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User Cake doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User contractor-temp doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User varg doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User joiner doesn't have UF_DONT_REQUIRE_PREAUTH set

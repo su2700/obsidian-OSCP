@@ -148,7 +148,7 @@ wfuzz -u http://$target/FUZZ --hc 404 -c -v -t 40 -w /usr/share/seclists/Discove
 codeBash
 
 ```
-katana -u http://127.0.0.1:80 -jc --depth 4 -silent
+katana -u http://$target -jc --depth 4 -silent
 ```
 
 **解释：**

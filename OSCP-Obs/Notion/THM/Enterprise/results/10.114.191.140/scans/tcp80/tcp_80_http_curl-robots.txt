@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Last-Modified: Fri, 12 Mar 2021 16:30:11 GMT
+Accept-Ranges: bytes
+ETag: "a29f3f85c17d71:0"
+Server: Microsoft-IIS/10.0
+Date: Sat, 18 Apr 2026 19:24:37 GMT
+Content-Length: 110
+
+Why would robots.txt exist on a Domain Controllers web server?
+Robots.txt is for search engines, not for you!

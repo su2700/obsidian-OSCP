@@ -1,0 +1,124 @@
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/_quick_tcp_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/xml/_quick_tcp_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/_full_tcp_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/xml/_full_tcp_nmap.xml" 10.114.191.140
+
+dig -p 53 -x 10.114.191.140 @10.114.191.140
+
+dig AXFR -p 53 @10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 53 --script="banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp53/tcp_53_dns_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp53/xml/tcp_53_dns_nmap.xml" 10.114.191.140
+
+feroxbuster -u http://10.114.191.140:80/ -t 10 -w /home/noah/.local/share/AutoRecon/wordlists/dirbuster.txt -x "txt,html,php,asp,aspx,jsp" -v -k -n -q -e -r -o "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp80/tcp_80_http_feroxbuster_dirbuster.txt"
+
+curl -sSikf http://10.114.191.140:80/.well-known/security.txt
+
+curl -sSikf http://10.114.191.140:80/robots.txt
+
+curl -sSik http://10.114.191.140:80/
+
+nikto -ask=no -Tuning=x4567890ac -nointeractive -host http://10.114.191.140:80 2>&1 | tee "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp80/tcp_80_http_nikto.txt"
+
+nmap -vv --reason -Pn -T4 -sV -p 80 --script="banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp80/tcp_80_http_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp80/xml/tcp_80_http_nmap.xml" 10.114.191.140
+
+whatweb --color=never --no-errors -a 3 -v http://10.114.191.140:80 2>&1
+
+nmap -vv --reason -Pn -T4 -sV -p 88 --script="banner,krb5-enum-users" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp88/tcp_88_kerberos_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp88/xml/tcp_88_kerberos_nmap.xml" 10.114.191.140
+
+impacket-getArch -target 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 135 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp135/tcp_135_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp135/xml/tcp_135_rpc_nmap.xml" 10.114.191.140
+
+impacket-rpcdump -port 135 10.114.191.140
+
+enum4linux-ng -A -d -v 10.114.191.140 2>&1
+
+nbtscan -rvh 10.114.191.140 2>&1
+
+nmap -vv --reason -Pn -T4 -sV -p 139 --script="banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp139/tcp_139_smb_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp139/xml/tcp_139_smb_nmap.xml" 10.114.191.140
+
+smbclient -L //10.114.191.140 -N -I 10.114.191.140 2>&1
+
+smbmap -H 10.114.191.140 -P 139 2>&1
+
+nmap -vv --reason -Pn -T4 -sV -p 389 --script="banner,(ldap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp389/tcp_389_ldap_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp389/xml/tcp_389_ldap_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 445 --script="banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp445/tcp_445_smb_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp445/xml/tcp_445_smb_nmap.xml" 10.114.191.140
+
+smbmap -H 10.114.191.140 -P 445 2>&1
+
+nmap -vv --reason -Pn -T4 -sV -p 464 --script="banner,krb5-enum-users" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp464/tcp_464_kerberos_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp464/xml/tcp_464_kerberos_nmap.xml" 10.114.191.140
+
+impacket-rpcdump -port 593 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 3268 --script="banner,(ldap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp3268/tcp_3268_ldap_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp3268/xml/tcp_3268_ldap_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 3389 --script="banner,(rdp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp3389/tcp_3389_rdp_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp3389/xml/tcp_3389_rdp_nmap.xml" 10.114.191.140
+
+smbmap -u null -p "" -H 10.114.191.140 -P 139 2>&1
+
+smbmap -u null -p "" -H 10.114.191.140 -P 445 2>&1
+
+smbmap -H 10.114.191.140 -P 139 -r 2>&1
+
+smbmap -H 10.114.191.140 -P 445 -r 2>&1
+
+smbmap -u null -p "" -H 10.114.191.140 -P 139 -r 2>&1
+
+smbmap -u null -p "" -H 10.114.191.140 -P 445 -r 2>&1
+
+smbmap -H 10.114.191.140 -P 139 -x "ipconfig /all" 2>&1
+
+smbmap -u null -p "" -H 10.114.191.140 -P 139 -x "ipconfig /all" 2>&1
+
+smbmap -H 10.114.191.140 -P 445 -x "ipconfig /all" 2>&1
+
+smbmap -u null -p "" -H 10.114.191.140 -P 445 -x "ipconfig /all" 2>&1
+
+feroxbuster -u http://10.114.191.140:7990/ -t 10 -w /home/noah/.local/share/AutoRecon/wordlists/dirbuster.txt -x "txt,html,php,asp,aspx,jsp" -v -k -n -q -e -r -o "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp7990/tcp_7990_http_feroxbuster_dirbuster.txt"
+
+curl -sSikf http://10.114.191.140:7990/.well-known/security.txt
+
+curl -sSikf http://10.114.191.140:7990/robots.txt
+
+curl -sSik http://10.114.191.140:7990/
+
+nikto -ask=no -Tuning=x4567890ac -nointeractive -host http://10.114.191.140:7990 2>&1 | tee "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp7990/tcp_7990_http_nikto.txt"
+
+nmap -vv --reason -Pn -T4 -sV -p 7990 --script="banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp7990/tcp_7990_http_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp7990/xml/tcp_7990_http_nmap.xml" 10.114.191.140
+
+whatweb --color=never --no-errors -a 3 -v http://10.114.191.140:7990 2>&1
+
+feroxbuster -u http://10.114.191.140:47001/ -t 10 -w /home/noah/.local/share/AutoRecon/wordlists/dirbuster.txt -x "txt,html,php,asp,aspx,jsp" -v -k -n -q -e -r -o "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp47001/tcp_47001_http_feroxbuster_dirbuster.txt"
+
+curl -sSikf http://10.114.191.140:47001/.well-known/security.txt
+
+curl -sSikf http://10.114.191.140:47001/robots.txt
+
+curl -sSik http://10.114.191.140:47001/
+
+nikto -ask=no -Tuning=x4567890ac -nointeractive -host http://10.114.191.140:47001 2>&1 | tee "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp47001/tcp_47001_http_nikto.txt"
+
+nmap -vv --reason -Pn -T4 -sV -p 47001 --script="banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp47001/tcp_47001_http_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp47001/xml/tcp_47001_http_nmap.xml" 10.114.191.140
+
+whatweb --color=never --no-errors -a 3 -v http://10.114.191.140:47001 2>&1
+
+nmap -vv --reason -Pn -T4 -sV -p 49664 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49664/tcp_49664_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49664/xml/tcp_49664_rpc_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 49665 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49665/tcp_49665_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49665/xml/tcp_49665_rpc_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 49667 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49667/tcp_49667_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49667/xml/tcp_49667_rpc_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 49669 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49669/tcp_49669_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49669/xml/tcp_49669_rpc_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 49671 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49671/tcp_49671_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49671/xml/tcp_49671_rpc_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 49673 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49673/tcp_49673_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49673/xml/tcp_49673_rpc_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 49677 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49677/tcp_49677_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49677/xml/tcp_49677_rpc_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 49700 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49700/tcp_49700_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49700/xml/tcp_49700_rpc_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 49704 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49704/tcp_49704_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49704/xml/tcp_49704_rpc_nmap.xml" 10.114.191.140
+
+nmap -vv --reason -Pn -T4 -sV -p 49838 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49838/tcp_49838_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49838/xml/tcp_49838_rpc_nmap.xml" 10.114.191.140
+

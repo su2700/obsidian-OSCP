@@ -1,2 +1,0 @@
-echo >> hash
-cat hash

@@ -1,0 +1,12 @@
+# Nmap 7.98 scan initiated Sat Apr 18 21:33:01 2026 as: /usr/lib/nmap/nmap --privileged -vv --reason -Pn -T4 -sV -p 49704 --script=banner,msrpc-enum,rpc-grind,rpcinfo -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49704/tcp_49704_rpc_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp49704/xml/tcp_49704_rpc_nmap.xml" 10.114.191.140
+Nmap scan report for 10.114.191.140
+Host is up, received user-set (0.020s latency).
+Scanned at 2026-04-18 21:33:02 CEST for 69s
+
+PORT      STATE SERVICE REASON          VERSION
+49704/tcp open  msrpc   syn-ack ttl 126 Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 18 21:34:11 2026 -- 1 IP address (1 host up) scanned in 70.18 seconds

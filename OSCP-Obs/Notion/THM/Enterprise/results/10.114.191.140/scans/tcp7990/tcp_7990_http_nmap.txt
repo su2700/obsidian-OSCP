@@ -1,0 +1,101 @@
+# Nmap 7.98 scan initiated Sat Apr 18 21:33:01 2026 as: /usr/lib/nmap/nmap --privileged -vv --reason -Pn -T4 -sV -p 7990 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp7990/tcp_7990_http_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp7990/xml/tcp_7990_http_nmap.xml" 10.114.191.140
+Nmap scan report for 10.114.191.140
+Host is up, received user-set (0.028s latency).
+Scanned at 2026-04-18 21:33:02 CEST for 1216s
+
+Bug in http-security-headers: no string output.
+PORT     STATE SERVICE REASON          VERSION
+7990/tcp open  http    syn-ack ttl 126 Microsoft IIS httpd 10.0
+| http-headers: 
+|   Content-Length: 325229
+|   Content-Type: text/html
+|   Last-Modified: Sat, 13 Mar 2021 02:08:21 GMT
+|   Accept-Ranges: bytes
+|   ETag: "418224bead17d71:0"
+|   Server: Microsoft-IIS/10.0
+|   Date: Sat, 18 Apr 2026 19:33:16 GMT
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    Other: 1
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+|_http-mobileversion-checker: No mobile version detected.
+|_http-server-header: Microsoft-IIS/10.0
+| http-vhosts: 
+|_128 names had status 200
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-malware-host: Host appears to be clean
+|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
+| http-fileupload-exploiter: 
+|   
+|_    Couldn't find a file-type field.
+|_http-chrono: Request times for /; avg: 226843.68ms; min: 395.98ms; max: 1132359.27ms
+|_http-date: Sat, 18 Apr 2026 19:33:17 GMT; -1s from local time.
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.114.191.140
+|   url                          method
+|_  http://10.114.191.140:7990/  FORM
+|_http-feed: Couldn't find any feeds.
+| http-php-version: Logo query returned unknown hash 6660f1a1aa27b1612219ed8155f5903f
+|_Credits query returned unknown hash 6660f1a1aa27b1612219ed8155f5903f
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.114.191.140
+|     
+|     Path: http://10.114.191.140:7990/
+|     Line number: 1
+|     Comment: 
+|         <!--
+|          Page saved with SingleFile 
+|          url: https://id.atlassian.com/login?continue=https%3A%2F%2Fid.atlassian.com%2Foidc%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fauth.atlassian.com%252Flogin%252Fcallback%26state%3DZYoU9SgLrmiacKG65QVzz7cr-8ILx3B7%26client_id%3DRP6QeEK_26C7q49Yf 
+|          saved date: Fri Mar 12 2021 21:01:52 GMT-0500 (Eastern Standard Time)
+|_        -->
+| http-grep: 
+|   (1) http://10.114.191.140:7990/: 
+|     (1) email: 
+|_      + 71e54c28be0d49f0bcd732ab30f35faa@sentry.io
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-errors: Couldn't find any error pages.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-title: Log in to continue - Log in with Atlassian account
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 18 21:53:18 2026 -- 1 IP address (1 host up) scanned in 1217.43 seconds

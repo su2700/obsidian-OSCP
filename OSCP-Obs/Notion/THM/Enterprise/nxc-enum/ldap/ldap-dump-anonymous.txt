@@ -1,0 +1,15 @@
+# extended LDIF
+#
+# LDAPv3
+# base <DC=LAB,DC=ENTERPRISE,DC=THM> with scope subtree
+# filter: (objectClass=*)
+# requesting: ALL
+#
+
+# search result
+search: 2
+result: 1 Operations error
+text: 000004DC: LdapErr: DSID-0C090A5C, comment: In order to perform this opera
+ tion a successful bind must be completed on the connection., data 0, v4563
+
+# numResponses: 1

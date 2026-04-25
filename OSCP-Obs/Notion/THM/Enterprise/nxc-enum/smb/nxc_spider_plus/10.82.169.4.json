@@ -1,0 +1,53 @@
+{
+    "NETLOGON": {},
+    "SYSVOL": {
+        "thm.local/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/GPT.INI": {
+            "atime_epoch": "2023-07-07 11:43:09",
+            "ctime_epoch": "2023-05-12 09:24:48",
+            "mtime_epoch": "2023-07-07 11:43:09",
+            "size": "23 B"
+        },
+        "thm.local/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Microsoft/Windows NT/SecEdit/GptTmpl.inf": {
+            "atime_epoch": "2023-07-07 11:43:09",
+            "ctime_epoch": "2023-05-12 09:24:48",
+            "mtime_epoch": "2023-07-07 11:43:09",
+            "size": "3 KB"
+        },
+        "thm.local/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Registry.pol": {
+            "atime_epoch": "2023-07-05 17:08:23",
+            "ctime_epoch": "2023-07-05 17:08:23",
+            "mtime_epoch": "2023-07-05 17:08:23",
+            "size": "3.74 KB"
+        },
+        "thm.local/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/comment.cmtx": {
+            "atime_epoch": "2023-07-05 17:08:23",
+            "ctime_epoch": "2023-05-12 11:50:07",
+            "mtime_epoch": "2023-07-05 17:08:23",
+            "size": "553 B"
+        },
+        "thm.local/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/GPT.INI": {
+            "atime_epoch": "2023-05-31 09:10:28",
+            "ctime_epoch": "2023-05-12 09:24:48",
+            "mtime_epoch": "2023-05-31 09:10:28",
+            "size": "23 B"
+        },
+        "thm.local/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/Microsoft/Windows NT/SecEdit/GptTmpl.inf": {
+            "atime_epoch": "2023-05-30 14:47:35",
+            "ctime_epoch": "2023-05-12 09:24:48",
+            "mtime_epoch": "2023-05-30 14:47:35",
+            "size": "6.03 KB"
+        },
+        "thm.local/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/Registry.pol": {
+            "atime_epoch": "2023-05-31 09:10:28",
+            "ctime_epoch": "2023-05-31 09:10:28",
+            "mtime_epoch": "2023-05-31 09:10:28",
+            "size": "452 B"
+        },
+        "thm.local/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/comment.cmtx": {
+            "atime_epoch": "2023-05-31 09:10:28",
+            "ctime_epoch": "2023-05-31 09:10:28",
+            "mtime_epoch": "2023-05-31 09:10:28",
+            "size": "562 B"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sat Apr 18 21:24:38 2026 as: /usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -p 464 -&#45;script=banner,krb5-enum-users -oN &quot;/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp464/tcp_464_kerberos_nmap.txt&quot; -oX &quot;/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp464/xml/tcp_464_kerberos_nmap.xml&quot; 10.114.191.140 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -p 464 -&#45;script=banner,krb5-enum-users -oN &quot;/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp464/tcp_464_kerberos_nmap.txt&quot; -oX &quot;/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp464/xml/tcp_464_kerberos_nmap.xml&quot; 10.114.191.140" start="1776540278" startstr="Sat Apr 18 21:24:38 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="464"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1776540278"/>
+<taskend task="NSE" time="1776540278"/>
+<taskbegin task="NSE" time="1776540278"/>
+<taskend task="NSE" time="1776540278"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1776540278"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1776540278"/>
+<taskbegin task="SYN Stealth Scan" time="1776540278"/>
+<taskend task="SYN Stealth Scan" time="1776540278" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1776540279"/>
+<taskend task="Service scan" time="1776540286" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1776540286"/>
+<taskend task="NSE" time="1776540296"/>
+<taskbegin task="NSE" time="1776540296"/>
+<taskend task="NSE" time="1776540296"/>
+<host starttime="1776540278" endtime="1776540296"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.114.191.140" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="kpasswd5" method="table" conf="3"/></port>
+</ports>
+<times srtt="20369" rttvar="20369" to="101845"/>
+</host>
+<taskbegin task="NSE" time="1776540296"/>
+<taskend task="NSE" time="1776540296"/>
+<taskbegin task="NSE" time="1776540296"/>
+<taskend task="NSE" time="1776540296"/>
+<runstats><finished time="1776540296" timestr="Sat Apr 18 21:24:56 2026" summary="Nmap done at Sat Apr 18 21:24:56 2026; 1 IP address (1 host up) scanned in 18.51 seconds" elapsed="18.51" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,37 @@
+[*] Service scan get-arch (tcp/135/msrpc/get-arch) ran a command which returned a non-zero exit code (1).
+[-] Command: impacket-getArch -target 10.114.191.140
+[-] Error Output:
+Traceback (most recent call last):
+  File "/usr/share/doc/python3-impacket/examples/getArch.py", line 34, in <module>
+    from impacket import version
+ModuleNotFoundError: No module named 'impacket'
+
+
+[*] Service scan rpcdump (tcp/593/ncacn_http/rpcdump) ran a command which returned a non-zero exit code (1).
+[-] Command: impacket-rpcdump -port 593 10.114.191.140
+[-] Error Output:
+Traceback (most recent call last):
+  File "/usr/share/doc/python3-impacket/examples/rpcdump.py", line 29, in <module>
+    from impacket.http import AUTH_NTLM
+ModuleNotFoundError: No module named 'impacket'
+
+
+[*] Service scan rpcdump (tcp/135/msrpc/rpcdump) ran a command which returned a non-zero exit code (1).
+[-] Command: impacket-rpcdump -port 135 10.114.191.140
+[-] Error Output:
+Traceback (most recent call last):
+  File "/usr/share/doc/python3-impacket/examples/rpcdump.py", line 29, in <module>
+    from impacket.http import AUTH_NTLM
+ModuleNotFoundError: No module named 'impacket'
+
+
+[*] Service scan DNS Reverse Lookup (tcp/53/domain/dns-reverse-lookup) ran a command which returned a non-zero exit code (9).
+[-] Command: dig -p 53 -x 10.114.191.140 @10.114.191.140
+[-] Error Output:
+
+
+[*] Service scan DNS Zone Transfer (tcp/53/domain/dns-zone-transfer) ran a command which returned a non-zero exit code (9).
+[-] Command: dig AXFR -p 53 @10.114.191.140
+[-] Error Output:
+
+

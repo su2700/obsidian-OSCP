@@ -1,0 +1,27 @@
+
+    ________  ___      ___  _______   ___      ___       __         _______
+   /"       )|"  \    /"  ||   _  "\ |"  \    /"  |     /""\       |   __ "\
+  (:   \___/  \   \  //   |(. |_)  :) \   \  //   |    /    \      (. |__) :)
+   \___  \    /\  \/.    ||:     \/   /\   \/.    |   /' /\  \     |:  ____/
+    __/  \   |: \.        |(|  _  \  |: \.        |  //  __'  \    (|  /
+   /" \   :) |.  \    /:  ||: |_)  :)|.  \    /:  | /   /  \   \  /|__/ \
+  (_______/  |___|\__/|___|(_______/ |___|\__/|___|(___/    \___)(_______)
+-----------------------------------------------------------------------------
+SMBMap - Samba Share Enumerator v1.10.7 | Shawn Evans - ShawnDEvans@gmail.com
+                     https://github.com/ShawnDEvans/smbmap
+
+[\] Checking for open ports...                                                                                                    [*] Detected 1 hosts serving SMB
+[|] Initializing hosts...                                                                                                    [/] Authenticating...                                                                                                    [-] Authenticating...                                                                                                    [\] Authenticating...                                                                                                    [*] Established 1 SMB connections(s) and 0 authenticated session(s)
+[|] Enumerating shares...                                                                                                    [/] Enumerating shares...                                                                                                    [-] Enumerating shares...                                                                                                    [\] Enumerating shares...                                                                                                    [|] Enumerating shares...                                                                                                    [/] Enumerating shares...                                                                                                    [-] Enumerating shares...                                                                                                    [\] Enumerating shares...                                                                                                    [|] Enumerating shares...                                                                                                    [/] Enumerating shares...                                                                                                    [-] Enumerating shares...                                                                                                    [\] Enumerating shares...                                                                                                    [|] Enumerating shares...                                                                                                    [/] Enumerating shares...                                                                                                    [-] Enumerating shares...
+[+] IP: 10.114.191.140:445	Name: 10.114.191.140      	Status: Authenticated
+	Disk                                                  	Permissions	Comment
+	----                                                  	-----------	-------
+	ADMIN$                                            	NO ACCESS	Remote Admin
+	C$                                                	NO ACCESS	Default share
+	Docs                                              	READ ONLY
+	IPC$                                              	READ ONLY	Remote IPC
+	NETLOGON                                          	NO ACCESS	Logon server share
+	SYSVOL                                            	NO ACCESS	Logon server share
+	Users                                             	READ ONLY	Users Share. Do Not Touch!
+[\] Closing connections..                                                                                                    [|] Closing connections..                                                                                                    [/] Closing connections..                                                                                                    [-] Closing connections..                                                                                                                                                                                                        [*] Closed 1 connections
+

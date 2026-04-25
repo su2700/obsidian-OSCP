@@ -1,0 +1,4 @@
+/home/noah/.local/lib/python3.13/site-packages/requests/__init__.py:102: RequestsDependencyWarning: urllib3 (1.26.20) or chardet (5.2.0)/charset_normalizer (2.0.12) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({})/charset_normalizer ({}) doesn't match a supported "
+[1;34mSMB[0m         10.114.191.140  445    LAB-DC           [1;34m[*][0m Windows 10 / Server 2019 Build 17763 x64 (name:LAB-DC) (domain:LAB.ENTERPRISE.THM) ([1;32msigning:True[0m) ([1;36mSMBv1:None[0m)[1;33m (Null Auth:True)[0m
+[1;34mSMB[0m         10.114.191.140  445    LAB-DC           [1;32m[+][0m LAB.ENTERPRISE.THM\/home/noah/Desktop/New:'' [1;33m(Guest)[0m

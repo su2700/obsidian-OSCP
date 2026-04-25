@@ -1,0 +1,1 @@
+由于 AppLocker 配置了默认规则，因此可以通过将可执行文件放置在以下目录中来绕过这些规则：C:\Windows\System32\spool\drivers\color，因为该目录默认已被列入白名单。

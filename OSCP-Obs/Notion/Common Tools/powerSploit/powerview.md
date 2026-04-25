@@ -19,7 +19,27 @@ Get-NetUser | select displayname,userprincipalname
  get-netdomain
 ```
 
-https://gist.github.com/m1kemu/ca6171696fba51ac65af74199f06749f
+LIST share fold
+```
+invoke-sharefinder
+
+```
+
+list all pc in domain by OS
+
+```
+Get-NetComputer -fulldata | select operatingsystem
+```
+list users
+
+```
+Get-Netuser | select cn
+```
+
+
+
+```
+[https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993)
 # **[invoke-allchecks.ps1](https://gist.github.com/m1kemu/ca6171696fba51ac65af74199f06749f)**
 
 use powerview change password

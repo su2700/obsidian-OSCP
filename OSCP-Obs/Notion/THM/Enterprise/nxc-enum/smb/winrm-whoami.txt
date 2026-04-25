@@ -1,0 +1,9 @@
+/home/noah/.local/lib/python3.13/site-packages/requests/__init__.py:102: RequestsDependencyWarning: urllib3 (1.26.20) or chardet (5.2.0)/charset_normalizer (2.0.12) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({})/charset_normalizer ({}) doesn't match a supported "
+[1;34mWINRM[0m       10.114.191.140  5985   LAB-DC           [1;34m[*][0m Windows 10 / Server 2019 Build 17763 (name:LAB-DC) (domain:LAB.ENTERPRISE.THM) 
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+[1;34mWINRM[0m       10.114.191.140  5985   LAB-DC           [1;31m[-][0m LAB.ENTERPRISE.THM\/home/noah/Desktop/New:''
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+[1;34mWINRM[0m       10.114.191.140  5985   LAB-DC           [1;31m[-][0m LAB.ENTERPRISE.THM\/home/noah/Desktop/New:(Guest)

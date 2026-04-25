@@ -1,0 +1,35 @@
+{
+    "NETLOGON": {},
+    "SYSVOL": {
+        "raz0rblack.thm/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/GPT.INI": {
+            "atime_epoch": "2021-02-23 10:14:46",
+            "ctime_epoch": "2021-02-23 10:00:07",
+            "mtime_epoch": "2021-02-23 10:14:46",
+            "size": "23 B"
+        },
+        "raz0rblack.thm/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Microsoft/Windows NT/SecEdit/GptTmpl.inf": {
+            "atime_epoch": "2021-02-23 10:14:46",
+            "ctime_epoch": "2021-02-23 10:00:07",
+            "mtime_epoch": "2021-02-23 10:14:45",
+            "size": "1.07 KB"
+        },
+        "raz0rblack.thm/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Registry.pol": {
+            "atime_epoch": "2021-02-23 10:06:51",
+            "ctime_epoch": "2021-02-23 10:06:51",
+            "mtime_epoch": "2021-02-23 10:06:52",
+            "size": "2.73 KB"
+        },
+        "raz0rblack.thm/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/GPT.INI": {
+            "atime_epoch": "2021-02-23 10:00:07",
+            "ctime_epoch": "2021-02-23 10:00:07",
+            "mtime_epoch": "2021-02-23 10:00:16",
+            "size": "22 B"
+        },
+        "raz0rblack.thm/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/Microsoft/Windows NT/SecEdit/GptTmpl.inf": {
+            "atime_epoch": "2021-02-23 10:00:07",
+            "ctime_epoch": "2021-02-23 10:00:07",
+            "mtime_epoch": "2021-02-23 10:00:16",
+            "size": "3.68 KB"
+        }
+    }
+}

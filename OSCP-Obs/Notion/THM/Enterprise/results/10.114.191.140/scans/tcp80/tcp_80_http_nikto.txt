@@ -1,0 +1,17 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.114.191.140
++ Target Hostname:    10.114.191.140
++ Target Port:        80
++ Start Time:         2026-04-18 21:24:38 (GMT2)
+---------------------------------------------------------------------------
++ Server: Microsoft-IIS/10.0
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ OPTIONS: Allowed HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST .
++ OPTIONS: Public HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST .
++ 7729 requests: 0 error(s) and 4 item(s) reported on remote host
++ End Time:           2026-04-18 21:27:37 (GMT2) (179 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

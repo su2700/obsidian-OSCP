@@ -1,0 +1,62 @@
+WhatWeb report for http://10.114.191.140:7990
+Status    : 200 OK
+Title     : Log in to continue - Log in with Atlassian account
+IP        : 10.114.191.140
+Country   : RESERVED, ZZ
+
+Summary   : Email[71e54c28be0d49f0bcd732ab30f35faa@sentry.io], HTML5, HTTPServer[Microsoft-IIS/10.0], Microsoft-IIS[10.0], X-UA-Compatible[IE=edge]
+
+Detected Plugins:
+[ Email ]
+	Extract email addresses. Find valid email address and
+	syntactically invalid email addresses from mailto: link
+	tags. We match syntactically invalid links containing
+	mailto: to catch anti-spam email addresses, eg. bob at
+	gmail.com. This uses the simplified email regular
+	expression from
+	http://www.regular-expressions.info/email.html for valid
+	email address matching.
+
+	String       : 71e54c28be0d49f0bcd732ab30f35faa@sentry.io
+
+[ HTML5 ]
+	HTML version 5, detected by the doctype declaration
+
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to
+	identify the operating system from the server header.
+
+	String       : Microsoft-IIS/10.0 (from server string)
+
+[ Microsoft-IIS ]
+	Microsoft Internet Information Services (IIS) for Windows
+	Server is a flexible, secure and easy-to-manage Web server
+	for hosting anything on the Web. From media streaming to
+	web application hosting, IIS's scalable and open
+	architecture is ready to handle the most demanding tasks.
+
+	Version      : 10.0
+	Website     : http://www.iis.net/
+
+[ X-UA-Compatible ]
+	This plugin retrieves the X-UA-Compatible value from the
+	HTTP header and meta http-equiv tag. - More Info:
+	http://msdn.microsoft.com/en-us/library/cc817574.aspx
+
+	String       : IE=edge
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Content-Type: text/html
+	Content-Encoding: gzip
+	Last-Modified: Sat, 13 Mar 2021 02:08:21 GMT
+	Accept-Ranges: bytes
+	ETag: "8018b1bdad17d71:0"
+	Vary: Accept-Encoding
+	Server: Microsoft-IIS/10.0
+	Date: Sat, 18 Apr 2026 19:33:02 GMT
+	Connection: close
+	Content-Length: 82005
+
+

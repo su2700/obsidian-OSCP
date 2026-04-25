@@ -1,0 +1,47 @@
+{
+    "NETLOGON": {},
+    "SYSVOL": {
+        "fusion.corp/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/GPT.INI": {
+            "atime_epoch": "2021-03-03 20:24:34",
+            "ctime_epoch": "2021-03-03 13:43:10",
+            "mtime_epoch": "2021-03-03 20:24:34",
+            "size": "23 B"
+        },
+        "fusion.corp/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Microsoft/Windows NT/SecEdit/GptTmpl.inf": {
+            "atime_epoch": "2021-03-03 13:57:53",
+            "ctime_epoch": "2021-03-03 13:43:10",
+            "mtime_epoch": "2021-03-03 13:57:53",
+            "size": "1.07 KB"
+        },
+        "fusion.corp/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Registry.pol": {
+            "atime_epoch": "2021-03-03 20:24:34",
+            "ctime_epoch": "2021-03-03 20:24:19",
+            "mtime_epoch": "2021-03-03 20:24:34",
+            "size": "5.33 KB"
+        },
+        "fusion.corp/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/GPT.INI": {
+            "atime_epoch": "2021-03-07 10:30:31",
+            "ctime_epoch": "2021-03-03 13:43:10",
+            "mtime_epoch": "2021-03-07 10:30:31",
+            "size": "23 B"
+        },
+        "fusion.corp/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/Microsoft/Windows NT/SecEdit/GptTmpl.inf": {
+            "atime_epoch": "2021-03-04 17:14:16",
+            "ctime_epoch": "2021-03-03 13:43:10",
+            "mtime_epoch": "2021-03-04 17:14:16",
+            "size": "4.46 KB"
+        },
+        "fusion.corp/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/Registry.pol": {
+            "atime_epoch": "2021-03-07 10:30:31",
+            "ctime_epoch": "2021-03-07 10:30:31",
+            "mtime_epoch": "2021-03-07 10:30:31",
+            "size": "5.52 KB"
+        },
+        "fusion.corp/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/comment.cmtx": {
+            "atime_epoch": "2021-03-07 10:30:31",
+            "ctime_epoch": "2021-03-03 15:08:26",
+            "mtime_epoch": "2021-03-07 10:30:31",
+            "size": "554 B"
+        }
+    }
+}

@@ -1,0 +1,112 @@
+# Nmap 7.98 scan initiated Sat Apr 18 21:23:25 2026 as: /usr/lib/nmap/nmap --privileged -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/_quick_tcp_nmap.txt" -oX "/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/xml/_quick_tcp_nmap.xml" 10.114.191.140
+Nmap scan report for 10.114.191.140
+Host is up, received user-set (0.021s latency).
+Scanned at 2026-04-18 21:23:25 CEST for 72s
+Not shown: 986 closed tcp ports (reset)
+PORT     STATE SERVICE       REASON          VERSION
+53/tcp   open  domain        syn-ack ttl 126 Simple DNS Plus
+80/tcp   open  http          syn-ack ttl 126 Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp   open  kerberos-sec  syn-ack ttl 126 Microsoft Windows Kerberos (server time: 2026-04-18 19:23:34Z)
+135/tcp  open  msrpc         syn-ack ttl 126 Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack ttl 126 Microsoft Windows netbios-ssn
+389/tcp  open  ldap          syn-ack ttl 126 Microsoft Windows Active Directory LDAP (Domain: ENTERPRISE.THM, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds? syn-ack ttl 126
+464/tcp  open  kpasswd5?     syn-ack ttl 126
+593/tcp  open  ncacn_http    syn-ack ttl 126 Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped    syn-ack ttl 126
+3268/tcp open  ldap          syn-ack ttl 126 Microsoft Windows Active Directory LDAP (Domain: ENTERPRISE.THM, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped    syn-ack ttl 126
+3389/tcp open  ms-wbt-server syn-ack ttl 126 Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: LAB-ENTERPRISE
+|   NetBIOS_Domain_Name: LAB-ENTERPRISE
+|   NetBIOS_Computer_Name: LAB-DC
+|   DNS_Domain_Name: LAB.ENTERPRISE.THM
+|   DNS_Computer_Name: LAB-DC.LAB.ENTERPRISE.THM
+|   DNS_Tree_Name: ENTERPRISE.THM
+|   Product_Version: 10.0.17763
+|_  System_Time: 2026-04-18T19:24:28+00:00
+| ssl-cert: Subject: commonName=LAB-DC.LAB.ENTERPRISE.THM
+| Issuer: commonName=LAB-DC.LAB.ENTERPRISE.THM
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-04-17T19:03:21
+| Not valid after:  2026-10-17T19:03:21
+| MD5:     0419 d36b 89ec 517e 63c0 5b43 7998 511e
+| SHA-1:   974e bc4d e9b0 35dc c514 9ef1 1ec7 fce4 5377 5286
+| SHA-256: b8d5 e6de c1e0 8a97 cc76 e822 1b19 ee99 f19e cbc1 49a9 e62e 1eb6 6e60 91c1 d9e6
+| -----BEGIN CERTIFICATE-----
+| MIIC9jCCAd6gAwIBAgIQL13SIhOwmoRLebpdXLzu7TANBgkqhkiG9w0BAQsFADAk
+| MSIwIAYDVQQDExlMQUItREMuTEFCLkVOVEVSUFJJU0UuVEhNMB4XDTI2MDQxNzE5
+| MDMyMVoXDTI2MTAxNzE5MDMyMVowJDEiMCAGA1UEAxMZTEFCLURDLkxBQi5FTlRF
+| UlBSSVNFLlRITTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALzRcGai
+| USvK7WAFK0Zd386wGN43WpaIfwrAws4NISrqvlDKg13EDR1+WA5wcye2VZ7pERwO
+| 8Zr5nB13peTlYnBdlCGsp0H5Rugnk5UGRQ18rj1bb/jehAq+pjDkPutv35A7wDak
+| lbyn7nNg4Y3rNJD0y8+sS7OhndpRUE2EOAiZjO6BizfczoWztX1W9X4OmSyx9Jt4
+| jqK4HY1BfN4rg3MYKtm6tMT/DHE6q1e0HLrJleOTg9KUKEPv5YK5gNl4KxlmQqho
+| l1zhNsimxcjG1QrfsboH4OAEW/ZRqeAIgnyXxD3XTwwrgO2zB/BdpUz8CU8JbBkC
+| lwoKroa6DjsgvfkCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0P
+| BAQDAgQwMA0GCSqGSIb3DQEBCwUAA4IBAQBs+22XF2dlJ6hC9VPD8Qt6DKH5U5RA
+| NsFmXCgUU8/8E8UctDa/aijeyO3Kfg44jHoeZQ6gDC+lAs9+1O679R9nDIAc3M3w
+| yBr1NBj+1SygYowYX+7qSgNvsv/1BdBlHrSWFCJndHD4iapNNUje9XA8C+KFBUvL
+| XjF/bOwQlU6HQwBhDzN8WTEepLd6T7aTzWN5QAMDt5qaH7fq60edHJKabmvJyAfm
+| IIs9Syr1RMMa5yliwbRouGbhHkBoiLsS7dIsEWmESDllG6VZmjSAz2ml2T9XZrvx
+| Om4PWDPypwpd7J6lREXRi3d69sgsFDtMvLjFOTH/KbV78gRFsxipsL3p
+|_-----END CERTIFICATE-----
+|_ssl-date: 2026-04-18T19:24:35+00:00; -1s from scanner time.
+5985/tcp open  http          syn-ack ttl 126 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+Aggressive OS guesses: Microsoft Windows Server 2016 (96%), Microsoft Windows Server 2019 (96%), Microsoft Windows 10 (93%), Microsoft Windows 10 1709 - 21H2 (93%), Microsoft Windows 10 21H1 (93%), Microsoft Windows Server 2022 (93%), Microsoft Windows 10 1903 (92%), Microsoft Windows Server 2012 (92%), Windows Server 2019 (92%), Microsoft Windows Vista SP1 (92%)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.98%E=4%D=4/18%OT=53%CT=1%CU=43031%PV=Y%DS=3%DC=T%G=Y%TM=69E3DA7
+OS:5%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=10B%TI=I%CI=I%II=I%SS=S%TS=
+OS:U)SEQ(SP=102%GCD=1%ISR=10E%CI=I%II=I%TS=U)SEQ(SP=106%GCD=1%ISR=10A%TI=I%
+OS:CI=I%II=I%SS=S%TS=U)SEQ(SP=108%GCD=1%ISR=10B%TI=I%CI=I%II=I%SS=S%TS=U)SE
+OS:Q(SP=FC%GCD=1%ISR=102%TI=I%CI=I%II=I%TS=U)OPS(O1=M4E8NW8NNS%O2=M4E8NW8NN
+OS:S%O3=M4E8NW8%O4=M4E8NW8NNS%O5=M4E8NW8NNS%O6=M4E8NNS)WIN(W1=FFFF%W2=FFFF%
+OS:W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)ECN(R=Y%DF=Y%T=80%W=FFFF%O=M4E8NW8NNS%CC
+OS:=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=
+OS:S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF
+OS:=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=
+OS:%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=
+OS:0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RI
+OS:PCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=Z)
+
+Network Distance: 3 hops
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: Host: LAB-DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 51042/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 14151/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 14004/udp): CLEAN (Timeout)
+|   Check 4 (port 31166/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-time: 
+|   date: 2026-04-18T19:24:32
+|_  start_date: N/A
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+
+TRACEROUTE (using port 993/tcp)
+HOP RTT      ADDRESS
+1   18.21 ms 192.168.128.1
+2   ...
+3   21.54 ms 10.114.191.140
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 18 21:24:37 2026 -- 1 IP address (1 host up) scanned in 72.46 seconds

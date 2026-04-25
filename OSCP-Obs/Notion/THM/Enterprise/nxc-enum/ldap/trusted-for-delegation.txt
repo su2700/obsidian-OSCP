@@ -1,0 +1,5 @@
+[1;34mLDAP[0m        10.114.191.140  389    LAB-DC           [1;34m[*][0m Windows 10 / Server 2019 Build 17763 (name:LAB-DC) (domain:LAB.ENTERPRISE.THM) ([1;31msigning:None[0m) ([1;33mchannel binding:No TLS cert[0m)
+[1;34mLDAP[0m        10.114.191.140  389    LAB-DC           [1;31m[-][0m LAB.ENTERPRISE.THM\/home/noah/Desktop/New:'' Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 104] Connection reset by peer
+[1;34mLDAP[0m        10.114.191.140  389    LAB-DC           [1;31m[-][0m LAB.ENTERPRISE.THM\/home/noah/Desktop/New:(Guest) Error connecting to the domain, are you sure LDAP service is running on the target?
+Error: [Errno 104] Connection reset by peer

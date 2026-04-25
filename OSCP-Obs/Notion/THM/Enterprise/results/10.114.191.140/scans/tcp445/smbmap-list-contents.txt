@@ -1,0 +1,82 @@
+
+    ________  ___      ___  _______   ___      ___       __         _______
+   /"       )|"  \    /"  ||   _  "\ |"  \    /"  |     /""\       |   __ "\
+  (:   \___/  \   \  //   |(. |_)  :) \   \  //   |    /    \      (. |__) :)
+   \___  \    /\  \/.    ||:     \/   /\   \/.    |   /' /\  \     |:  ____/
+    __/  \   |: \.        |(|  _  \  |: \.        |  //  __'  \    (|  /
+   /" \   :) |.  \    /:  ||: |_)  :)|.  \    /:  | /   /  \   \  /|__/ \
+  (_______/  |___|\__/|___|(_______/ |___|\__/|___|(___/    \___)(_______)
+-----------------------------------------------------------------------------
+SMBMap - Samba Share Enumerator v1.10.7 | Shawn Evans - ShawnDEvans@gmail.com
+                     https://github.com/ShawnDEvans/smbmap
+
+[\] Checking for open ports...                                                                                                    [*] Detected 1 hosts serving SMB
+[|] Initializing hosts...                                                                                                    [/] Authenticating...                                                                                                    [-] Authenticating...                                                                                                    [\] Authenticating...                                                                                                    [*] Established 1 SMB connections(s) and 0 authenticated session(s)
+[|] Enumerating shares...                                                                                                    [/] Enumerating shares...                                                                                                    [-] Enumerating shares...                                                                                                    [\] Enumerating shares...                                                                                                    [|] Enumerating shares...                                                                                                    [/] Enumerating shares...                                                                                                    [-] Enumerating shares...                                                                                                    [\] Enumerating shares...                                                                                                    [|] Enumerating shares...                                                                                                    [/] Enumerating shares...                                                                                                    [-] Enumerating shares...                                                                                                    [\] Enumerating shares...                                                                                                    [|] Enumerating shares...                                                                                                    [/] Enumerating shares...                                                                                                    [-] Enumerating shares...                                                                                                    [\] Enumerating shares...                                                                                                    [|] Enumerating shares...                                                                                                    [/] Enumerating shares...                                                                                                    [-] Enumerating shares...                                                                                                    [\] Traversing shares...                                                                                                    [|] Traversing shares...                                                                                                    [/] Traversing shares...
+[+] IP: 10.114.191.140:445	Name: 10.114.191.140      	Status: Authenticated
+	Disk                                                  	Permissions	Comment
+	----                                                  	-----------	-------
+	ADMIN$                                            	NO ACCESS	Remote Admin
+	C$                                                	NO ACCESS	Default share
+	Docs                                              	READ ONLY
+	./Docs
+	dr--r--r--                0 Mon Mar 15 03:47:35 2021	.
+	dr--r--r--                0 Mon Mar 15 03:47:35 2021	..
+	fr--r--r--            15360 Mon Mar 15 03:47:35 2021	RSA-Secured-Credentials.xlsx
+	fr--r--r--            18432 Mon Mar 15 03:47:49 2021	RSA-Secured-Document-PII.docx
+	IPC$                                              	READ ONLY	Remote IPC
+	./IPC$
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	InitShutdown
+	fr--r--r--                4 Mon Jan  1 01:12:12 1601	lsass
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	ntsvcs
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	scerpc
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-3ec-0
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	epmapper
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-2ac-0
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	LSM_API_service
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	eventlog
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-420-0
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	TermSrv_API_service
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	Ctx_WinStation_API_service
+	fr--r--r--                4 Mon Jan  1 01:12:12 1601	wkssvc
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-310-0
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-310-1
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	SessEnvPublicRpc
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	atsvc
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-350-0
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	RpcProxy\49670
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	1774ebaf38fea291
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	RpcProxy\593
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-77c-0
+	fr--r--r--                4 Mon Jan  1 01:12:12 1601	srvsvc
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	spoolss
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-958-0
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	netdfs
+	fr--r--r--                3 Mon Jan  1 01:12:12 1601	W32TIME_ALT
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-2fc-0
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-9d0-0
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	PIPE_EVENTROOT\CIMV2SCM EVENT PROVIDER
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	GoogleCrashServices\S-1-5-18
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	GoogleCrashServices\S-1-5-18-x64
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	Winsock2\CatalogChangeListener-a68-0
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	iisipmf3899c16-17a7-4938-892a-fc188615132b
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	iislogpipee81e8550-3c14-4e75-8206-7a389efa99c2
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	iisipm8d6f765f-8b15-4f4f-ac92-6159022a0468
+	fr--r--r--                1 Mon Jan  1 01:12:12 1601	iislogpipe3ae4d8cc-9010-4362-b5e9-4d86045355bf
+	NETLOGON                                          	NO ACCESS	Logon server share
+	SYSVOL                                            	NO ACCESS	Logon server share
+	Users                                             	READ ONLY	Users Share. Do Not Touch!
+	./Users
+	dw--w--w--                0 Fri Mar 12 03:11:49 2021	.
+	dw--w--w--                0 Fri Mar 12 03:11:49 2021	..
+	dr--r--r--                0 Thu Mar 11 22:55:47 2021	Administrator
+	dr--r--r--                0 Fri Mar 12 01:17:03 2021	All Users
+	dr--r--r--                0 Fri Mar 12 01:28:06 2021	atlbitbucket
+	dr--r--r--                0 Fri Mar 12 03:11:51 2021	bitbucket
+	dw--w--w--                0 Fri Mar 12 04:52:19 2021	Default
+	dr--r--r--                0 Fri Mar 12 01:17:03 2021	Default User
+	fr--r--r--              174 Fri Mar 12 01:15:55 2021	desktop.ini
+	dr--r--r--                0 Fri Mar 12 04:56:23 2021	LAB-ADMIN
+	dw--w--w--                0 Thu Mar 11 22:27:02 2021	Public
+[-] Closing connections..                                                                                                    [\] Closing connections..                                                                                                    [|] Closing connections..                                                                                                    [/] Closing connections..                                                                                                    [-] Closing connections..                                                                                                                                                                                                        [*] Closed 1 connections
+

@@ -1,0 +1,1 @@
+Select-String -Path .\output.txt -Pattern "ZeroTier"

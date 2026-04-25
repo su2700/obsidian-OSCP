@@ -1,0 +1,2 @@
+[-] Got error: socket ssl wrapping error: [Errno 104] Connection reset by peer
+[-] Use -debug to print a stacktrace

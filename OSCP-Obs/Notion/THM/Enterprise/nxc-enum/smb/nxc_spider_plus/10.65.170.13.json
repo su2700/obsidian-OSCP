@@ -1,0 +1,88 @@
+{
+    "NETLOGON": {
+        "ResetPassword.vbs": {
+            "atime_epoch": "2021-03-17 00:18:14",
+            "ctime_epoch": "2021-03-17 00:15:49",
+            "mtime_epoch": "2021-03-17 00:18:14",
+            "size": "2.75 KB"
+        }
+    },
+    "SYSVOL": {
+        "vulnnet-rst.local/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/GPT.INI": {
+            "atime_epoch": "2021-03-13 03:53:26",
+            "ctime_epoch": "2021-03-11 20:20:26",
+            "mtime_epoch": "2021-03-13 03:53:26",
+            "size": "22 B"
+        },
+        "vulnnet-rst.local/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Microsoft/Windows NT/SecEdit/GptTmpl.inf": {
+            "atime_epoch": "2021-03-13 03:53:25",
+            "ctime_epoch": "2021-03-11 20:20:26",
+            "mtime_epoch": "2021-03-13 03:53:25",
+            "size": "1.12 KB"
+        },
+        "vulnnet-rst.local/Policies/{31B2F340-016D-11D2-945F-00C04FB984F9}/MACHINE/Registry.pol": {
+            "atime_epoch": "2021-03-11 20:25:58",
+            "ctime_epoch": "2021-03-11 20:25:58",
+            "mtime_epoch": "2021-03-11 20:25:58",
+            "size": "2.73 KB"
+        },
+        "vulnnet-rst.local/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/GPT.INI": {
+            "atime_epoch": "2021-03-14 00:39:58",
+            "ctime_epoch": "2021-03-11 20:20:26",
+            "mtime_epoch": "2021-03-14 00:39:58",
+            "size": "22 B"
+        },
+        "vulnnet-rst.local/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/Microsoft/Windows NT/SecEdit/GptTmpl.inf": {
+            "atime_epoch": "2021-03-14 00:39:58",
+            "ctime_epoch": "2021-03-11 20:20:26",
+            "mtime_epoch": "2021-03-14 00:39:58",
+            "size": "3.71 KB"
+        },
+        "vulnnet-rst.local/scripts/ResetPassword.vbs": {
+            "atime_epoch": "2021-03-17 00:18:14",
+            "ctime_epoch": "2021-03-17 00:15:49",
+            "mtime_epoch": "2021-03-17 00:18:14",
+            "size": "2.75 KB"
+        }
+    },
+    "VulnNet-Business-Anonymous": {
+        "Business-Manager.txt": {
+            "atime_epoch": "2021-03-13 03:46:40",
+            "ctime_epoch": "2021-03-13 03:46:40",
+            "mtime_epoch": "2021-03-13 04:21:04",
+            "size": "758 B"
+        },
+        "Business-Sections.txt": {
+            "atime_epoch": "2021-03-13 03:46:40",
+            "ctime_epoch": "2021-03-13 03:46:40",
+            "mtime_epoch": "2021-03-13 04:21:04",
+            "size": "654 B"
+        },
+        "Business-Tracking.txt": {
+            "atime_epoch": "2021-03-13 03:46:40",
+            "ctime_epoch": "2021-03-13 03:46:40",
+            "mtime_epoch": "2021-03-13 04:21:04",
+            "size": "471 B"
+        }
+    },
+    "VulnNet-Enterprise-Anonymous": {
+        "Enterprise-Operations.txt": {
+            "atime_epoch": "2021-03-13 03:46:40",
+            "ctime_epoch": "2021-03-13 03:46:40",
+            "mtime_epoch": "2021-03-13 04:19:59",
+            "size": "467 B"
+        },
+        "Enterprise-Safety.txt": {
+            "atime_epoch": "2021-03-13 03:46:40",
+            "ctime_epoch": "2021-03-13 03:46:40",
+            "mtime_epoch": "2021-03-13 04:19:59",
+            "size": "503 B"
+        },
+        "Enterprise-Sync.txt": {
+            "atime_epoch": "2021-03-13 03:46:40",
+            "ctime_epoch": "2021-03-13 03:46:40",
+            "mtime_epoch": "2021-03-13 04:19:59",
+            "size": "496 B"
+        }
+    }
+}

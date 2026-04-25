@@ -1,0 +1,15 @@
+/home/noah/.local/lib/python3.13/site-packages/requests/__init__.py:102: RequestsDependencyWarning: urllib3 (1.26.20) or chardet (5.2.0)/charset_normalizer (2.0.12) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({})/charset_normalizer ({}) doesn't match a supported "
+[1;34mSMB[0m         10.114.191.140  445    LAB-DC           [1;34m[*][0m Windows 10 / Server 2019 Build 17763 x64 (name:LAB-DC) (domain:LAB.ENTERPRISE.THM) ([1;32msigning:True[0m) ([1;36mSMBv1:None[0m)[1;33m (Null Auth:True)[0m
+[1;34mSMB[0m         10.114.191.140  445    LAB-DC           [1;32m[+][0m LAB.ENTERPRISE.THM\/home/noah/Desktop/New:'' [1;33m(Guest)[0m
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;34m[*][0m Started module spidering_plus with the following options:
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;34m[*][0m  DOWNLOAD_FLAG: False
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;34m[*][0m     STATS_FLAG: True
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;34m[*][0m EXCLUDE_FILTER: ['print$', 'ipc$']
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;34m[*][0m   EXCLUDE_EXTS: ['ico', 'lnk']
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;34m[*][0m  MAX_FILE_SIZE: 50 KB
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;34m[*][0m  OUTPUT_FOLDER: /home/noah/.nxc/modules/nxc_spider_plus
+[1;34mSMB[0m         10.114.191.140  445    LAB-DC           [1;35m[-][0m Error enumerating shares: STATUS_ACCESS_DENIED
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;32m[+][0m Saved share-file metadata to "/home/noah/.nxc/modules/nxc_spider_plus/10.114.191.140.json".
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;34m[*][0m Total folders found:  0
+[1;36mSPIDER_PLUS[0m 10.114.191.140  445    LAB-DC           [1;34m[*][0m Total files found:    0

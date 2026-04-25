@@ -1,0 +1,9 @@
+;; communications error to 10.114.191.140#53: timed out
+;; communications error to 10.114.191.140#53: timed out
+;; communications error to 10.114.191.140#53: timed out
+
+; <<>> DiG 9.20.20-1-Debian <<>> AXFR -p 53 @10.114.191.140
+; (1 server found)
+;; global options: +cmd
+;; no servers could be reached
+

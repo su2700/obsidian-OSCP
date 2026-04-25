@@ -1,0 +1,3 @@
+SMB                      10.114.191.140  445    LAB-DC           [*] Windows 10 / Server 2019 Build 17763 x64 (name:LAB-DC) (domain:LAB.ENTERPRISE.THM) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB                      10.114.191.140  445    LAB-DC           [+] LAB.ENTERPRISE.THM\: 
+SMB                      10.114.191.140  445    LAB-DC           [-] Error connecting: LSAD SessionError: code: 0xc0000022 - STATUS_ACCESS_DENIED - {Access Denied} A process has requested access to an object but has not been granted those access rights.

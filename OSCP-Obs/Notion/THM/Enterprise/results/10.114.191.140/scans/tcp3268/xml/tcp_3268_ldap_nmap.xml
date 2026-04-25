@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sat Apr 18 21:24:38 2026 as: /usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -p 3268 &quot;-&#45;script=banner,(ldap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN &quot;/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp3268/tcp_3268_ldap_nmap.txt&quot; -oX &quot;/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp3268/xml/tcp_3268_ldap_nmap.xml&quot; 10.114.191.140 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -p 3268 &quot;-&#45;script=banner,(ldap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN &quot;/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp3268/tcp_3268_ldap_nmap.txt&quot; -oX &quot;/home/noah/Desktop/New Folder/obsidian-OSCP/OSCP-Obs/Notion/THM/Enterprise/results/10.114.191.140/scans/tcp3268/xml/tcp_3268_ldap_nmap.xml&quot; 10.114.191.140" start="1776540278" startstr="Sat Apr 18 21:24:38 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3268"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1776540278"/>
+<taskend task="NSE" time="1776540278"/>
+<taskbegin task="NSE" time="1776540278"/>
+<taskend task="NSE" time="1776540278"/>
+<taskbegin task="NSE" time="1776540278"/>
+<taskend task="NSE" time="1776540278"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1776540278"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1776540279"/>
+<taskbegin task="SYN Stealth Scan" time="1776540279"/>
+<taskend task="SYN Stealth Scan" time="1776540279" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1776540279"/>
+<taskend task="Service scan" time="1776540285" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1776540285"/>
+<taskend task="NSE" time="1776540295"/>
+<taskbegin task="NSE" time="1776540295"/>
+<taskend task="NSE" time="1776540295"/>
+<taskbegin task="NSE" time="1776540295"/>
+<taskend task="NSE" time="1776540295"/>
+<host starttime="1776540279" endtime="1776540295"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.114.191.140" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: ENTERPRISE.THM, Site: Default-First-Site-Name" hostname="LAB-DC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ldap-rootdse" output="&#xa;LDAP Results&#xa;  &lt;ROOT&gt;&#xa;      domainFunctionality: 7&#xa;      forestFunctionality: 7&#xa;      domainControllerFunctionality: 7&#xa;      rootDomainNamingContext: DC=ENTERPRISE,DC=THM&#xa;      ldapServiceName: ENTERPRISE.THM:lab-dc$@LAB.ENTERPRISE.THM&#xa;      isGlobalCatalogReady: TRUE&#xa;      supportedSASLMechanisms: GSSAPI&#xa;      supportedSASLMechanisms: GSS-SPNEGO&#xa;      supportedSASLMechanisms: EXTERNAL&#xa;      supportedSASLMechanisms: DIGEST-MD5&#xa;      supportedLDAPVersion: 3&#xa;      supportedLDAPVersion: 2&#xa;      supportedLDAPPolicies: MaxPoolThreads&#xa;      supportedLDAPPolicies: MaxPercentDirSyncRequests&#xa;      supportedLDAPPolicies: MaxDatagramRecv&#xa;      supportedLDAPPolicies: MaxReceiveBuffer&#xa;      supportedLDAPPolicies: InitRecvTimeout&#xa;      supportedLDAPPolicies: MaxConnections&#xa;      supportedLDAPPolicies: MaxConnIdleTime&#xa;      supportedLDAPPolicies: MaxPageSize&#xa;      supportedLDAPPolicies: MaxBatchReturnMessages&#xa;      supportedLDAPPolicies: MaxQueryDuration&#xa;      supportedLDAPPolicies: MaxDirSyncDuration&#xa;      supportedLDAPPolicies: MaxTempTableSize&#xa;      supportedLDAPPolicies: MaxResultSetSize&#xa;      supportedLDAPPolicies: MinResultSets&#xa;      supportedLDAPPolicies: MaxResultSetsPerConn&#xa;      supportedLDAPPolicies: MaxNotificationPerConn&#xa;      supportedLDAPPolicies: MaxValRange&#xa;      supportedLDAPPolicies: MaxValRangeTransitive&#xa;      supportedLDAPPolicies: ThreadMemoryLimit&#xa;      supportedLDAPPolicies: SystemMemoryLimitPercent&#xa;      supportedControl: 1.2.840.113556.1.4.319&#xa;      supportedControl: 1.2.840.113556.1.4.801&#xa;      supportedControl: 1.2.840.113556.1.4.473&#xa;      supportedControl: 1.2.840.113556.1.4.528&#xa;      supportedControl: 1.2.840.113556.1.4.417&#xa;      supportedControl: 1.2.840.113556.1.4.619&#xa;      supportedControl: 1.2.840.113556.1.4.841&#xa;      supportedControl: 1.2.840.113556.1.4.529&#xa;      supportedControl: 1.2.840.113556.1.4.805&#xa;      supportedControl: 1.2.840.113556.1.4.521&#xa;      supportedControl: 1.2.840.113556.1.4.970&#xa;      supportedControl: 1.2.840.113556.1.4.1338&#xa;      supportedControl: 1.2.840.113556.1.4.474&#xa;      supportedControl: 1.2.840.113556.1.4.1339&#xa;      supportedControl: 1.2.840.113556.1.4.1340&#xa;      supportedControl: 1.2.840.113556.1.4.1413&#xa;      supportedControl: 2.16.840.1.113730.3.4.9&#xa;      supportedControl: 2.16.840.1.113730.3.4.10&#xa;      supportedControl: 1.2.840.113556.1.4.1504&#xa;      supportedControl: 1.2.840.113556.1.4.1852&#xa;      supportedControl: 1.2.840.113556.1.4.802&#xa;      supportedControl: 1.2.840.113556.1.4.1907&#xa;      supportedControl: 1.2.840.113556.1.4.1948&#xa;      supportedControl: 1.2.840.113556.1.4.1974&#xa;      supportedControl: 1.2.840.113556.1.4.1341&#xa;      supportedControl: 1.2.840.113556.1.4.2026&#xa;      supportedControl: 1.2.840.113556.1.4.2064&#xa;      supportedControl: 1.2.840.113556.1.4.2065&#xa;      supportedControl: 1.2.840.113556.1.4.2066&#xa;      supportedControl: 1.2.840.113556.1.4.2090&#xa;      supportedControl: 1.2.840.113556.1.4.2205&#xa;      supportedControl: 1.2.840.113556.1.4.2204&#xa;      supportedControl: 1.2.840.113556.1.4.2206&#xa;      supportedControl: 1.2.840.113556.1.4.2211&#xa;      supportedControl: 1.2.840.113556.1.4.2239&#xa;      supportedControl: 1.2.840.113556.1.4.2255&#xa;      supportedControl: 1.2.840.113556.1.4.2256&#xa;      supportedControl: 1.2.840.113556.1.4.2309&#xa;      supportedControl: 1.2.840.113556.1.4.2330&#xa;      supportedControl: 1.2.840.113556.1.4.2354&#xa;      supportedCapabilities: 1.2.840.113556.1.4.800&#xa;      supportedCapabilities: 1.2.840.113556.1.4.1670&#xa;      supportedCapabilities: 1.2.840.113556.1.4.1791&#xa;      supportedCapabilities: 1.2.840.113556.1.4.1935&#xa;      supportedCapabilities: 1.2.840.113556.1.4.2080&#xa;      supportedCapabilities: 1.2.840.113556.1.4.2237&#xa;      subschemaSubentry: CN=Aggregate,CN=Schema,CN=Configuration,DC=ENTERPRISE,DC=THM&#xa;      serverName: CN=LAB-DC,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=ENTERPRISE,DC=THM&#xa;      schemaNamingContext: CN=Schema,CN=Configuration,DC=ENTERPRISE,DC=THM&#xa;      namingContexts: CN=Configuration,DC=ENTERPRISE,DC=THM&#xa;      namingContexts: CN=Schema,CN=Configuration,DC=ENTERPRISE,DC=THM&#xa;      namingContexts: DC=ForestDnsZones,DC=ENTERPRISE,DC=THM&#xa;      namingContexts: DC=LAB,DC=ENTERPRISE,DC=THM&#xa;      namingContexts: DC=DomainDnsZones,DC=LAB,DC=ENTERPRISE,DC=THM&#xa;      isSynchronized: TRUE&#xa;      highestCommittedUSN: 69687&#xa;      dsServiceName: CN=NTDS Settings,CN=LAB-DC,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=ENTERPRISE,DC=THM&#xa;      dnsHostName: LAB-DC.LAB.ENTERPRISE.THM&#xa;      defaultNamingContext: DC=LAB,DC=ENTERPRISE,DC=THM&#xa;      currentTime: 20260418192445.0Z&#xa;      configurationNamingContext: CN=Configuration,DC=ENTERPRISE,DC=THM&#xa;"/></port>
+</ports>
+<times srtt="20603" rttvar="20603" to="103015"/>
+</host>
+<taskbegin task="NSE" time="1776540295"/>
+<taskend task="NSE" time="1776540295"/>
+<taskbegin task="NSE" time="1776540295"/>
+<taskend task="NSE" time="1776540295"/>
+<taskbegin task="NSE" time="1776540295"/>
+<taskend task="NSE" time="1776540295"/>
+<runstats><finished time="1776540295" timestr="Sat Apr 18 21:24:55 2026" summary="Nmap done at Sat Apr 18 21:24:55 2026; 1 IP address (1 host up) scanned in 17.84 seconds" elapsed="17.84" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

